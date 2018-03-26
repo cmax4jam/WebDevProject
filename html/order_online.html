@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Christopher May">
+    <meta name="keywords" content="Prantl's Bakery, Almond Torte">
+    <meta name="descriptions" content="Prantl's Bakery Official Website">
+    <title>Prantl's Bakery</title>
+    <link rel="stylesheet" media="all" type="text/css" href="../css/styles.css"/>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.css" rel="stylesheet" type="text/css" />
+
+    <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.bootstrap.min.css" rel="stylesheet" />
+    <link href="http://protostrap.com/Assets/gv/css/gv.bootstrap-form.css" rel="stylesheet" type="text/css" />
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+</head>
+<body>
+<div id="container">
+    <div id="top_row">
+        <header >
+            <div id="header-logo">
+                <a href="index.html">
+                    <img class="responsive" src="../images/logo.png" alt="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="what_we_make.html" class="nav">What We Make</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Special Occasions</a>
+                        <div class="dropdown-content">
+                            <a href="weddings.html">Weddings</a>
+                        </div>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="locations.html" class="nav">Locations</a></li>
+                    <li><a href="contact.html" class="nav">Contact</a></li>
+
+                </ul>
+            </nav>
+            <a href="order_online.html" class="order-button">Order Online</a>
+        </header>
+
+    </div>
+
+    <div id="content">
+        <body>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <form action="../submit" id="formentry" class="form-horizontal" role="form" data-parsley-validate novalidate>
+                    <div class="container-fluid shadow">
+                        <div class="row">
+                            <div id="valErr" class="row viewerror clearfix hidden">
+                                <div class="alert alert-danger">Oops! Seems there are some errors..</div>
+                            </div>
+                            <div id="valOk" class="row viewerror clearfix hidden">
+                                <div class="alert alert-success">Yay! ..</div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-12"><div class="form-group brdbot">
+                                    <h4>Order our Famous Almond Torte!</h4>
+                                    <div class="controls col-sm-9">
+
+                                        <p id="field10" data-default-label="Header" data-default-is-header="true" data-control-type="header">Limit 10 (8" x 3") Almond Torte cakes per customer.</p><span id="errId1" class="error"></span></div>
+
+                                </div><div class="form-group">
+                                    <label class="control-label control-label-left col-sm-3" for="field11">First Name<span class="req"> *</span></label>
+                                    <div class="controls col-sm-9">
+
+                                        <input id="field11" type="text" class="form-control k-textbox" data-role="text" placeholder="" required="required" data-parsley-errors-container="#errId2"><span id="errId2" class="error"></span></div>
+
+                                </div><div class="form-group">
+                                    <label class="control-label control-label-left col-sm-3" for="field24">Last Name<span class="req"> *</span></label>
+                                    <div class="controls col-sm-9">
+
+                                        <input id="field24" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId3"><span id="errId3" class="error"></span></div>
+
+                                </div><div class="form-group brdbot">
+                                    <h4>Billing Information</h4>
+                                    <div class="controls col-sm-9">
+
+                                        <p id="field12" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p><span id="errId4" class="error"></span></div>
+
+                                </div><div class="form-group">
+                                    <label class="control-label control-label-left col-sm-3" for="field13">Email Address<span class="req"> *</span></label>
+                                    <div class="controls col-sm-9">
+
+                                        <input id="field13" type="text" class="form-control k-textbox" data-role="text" required="required" placeholder="your.email@example.com" data-parsley-errors-container="#errId5"><span id="errId5" class="error"></span></div>
+
+                                </div><div class="form-group">
+                                    <label class="control-label control-label-left col-sm-3" for="field25">Address Line 1<span class="req"> *</span></label>
+                                    <div class="controls col-sm-9">
+
+                                        <input id="field25" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId6"><span id="errId6" class="error"></span></div>
+
+                                </div><div class="form-group">
+                                    <label class="control-label control-label-left col-sm-3" for="field26">Address Line 2</label>
+                                    <div class="controls col-sm-9">
+
+                                        <input id="field26" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId7"><span id="errId7" class="error"></span></div>
+
+                                </div><div class="form-group" style="display: block;">
+                                    <label class="control-label control-label-left col-sm-3" for="field27">Country<span class="req"> *</span></label>
+                                    <div class="controls col-sm-9">
+
+                                        <select id="field27" class="form-control" data-role="select" required="required" selected="selected" data-parsley-errors-container="#errId8">
+
+
+
+
+
+                                            <option value="">Select Country</option><option value="United States">United States</option></select><span id="errId8" class="error"></span></div>
+
+                                </div><div class="form-group" style="display: block;">
+                                    <label class="control-label control-label-left col-sm-3" for="field64">Zip Code<span class="req"> *</span></label>
+                                    <div class="controls col-sm-9">
+
+                                        <input id="field64" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId9"><span id="errId9" class="error"></span></div>
+
+                                </div><div class="form-group" style="display: block;">
+                                    <label class="control-label control-label-left col-sm-3" for="field38">City<span class="req"> *</span></label>
+                                    <div class="controls col-sm-9">
+
+                                        <input id="field38" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId10"><span id="errId10" class="error"></span></div>
+
+                                </div><div class="form-group" style="display: block;">
+                                    <label class="control-label control-label-left col-sm-3" for="field39">State/Territory<span class="req"> *</span></label>
+                                    <div class="controls col-sm-9">
+
+                                        <select id="field39" class="form-control" data-role="select" selected="selected" required="required" data-parsley-errors-container="#errId11">
+
+
+
+
+
+                                            <option value="">Select State</option><option value="Option 1">Pennsylvania</option><option value="Option 2">Washington</option></select><span id="errId11" class="error"></span></div>
+
+                                </div><div class="form-group">
+                                    <label class="control-label control-label-left col-sm-3" for="field40">Phone<span class="req"> *</span></label>
+                                    <div class="controls col-sm-9">
+
+                                        <input id="field40" type="text" class="form-control k-textbox" data-role="text" placeholder="" required="required" data-parsley-errors-container="#errId12"><span id="errId12" class="error"></span></div>
+
+                                </div><div class="form-group brdbot">
+                                    <h4>Order Information</h4>
+                                    <div class="controls col-sm-9">
+
+                                        <p id="field47" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p><span id="errId13" class="error"></span></div>
+
+                                </div><div class="form-group">
+                                    <label class="control-label control-label-left col-sm-3" for="field53">Number of Cakes<span class="req"> *</span></label>
+                                    <div class="controls col-sm-9">
+
+                                        <select id="field53" class="form-control" data-role="select" required="required" selected="selected" data-parsley-errors-container="#errId14">
+
+
+
+
+
+                                            <option value="1" selected="selected">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="">9</option><option value="">10</option></select><span class="help-block">Max 10</span><span id="errId14" class="error"></span></div>
+
+                                </div><div class="form-group">
+                                    <label class="control-label control-label-left col-sm-3" for="field65">Pickup Location<span class="req"> *</span></label>
+                                    <div class="controls col-sm-9">
+
+                                        <select id="field65" class="form-control" data-role="select" required="required" selected="selected" data-parsley-errors-container="#errId15">
+
+
+
+
+
+                                            <option value=""></option><option value="Downtown">Downtown</option><option value="Shadyside">Shadyside</option></select><span id="errId15" class="error"></span></div>
+
+                                </div><div class="form-group">
+                                    <label class="control-label control-label-left col-sm-3" for="field72">Pickup Date<span class="req"> *</span></label>
+                                    <div class="controls col-sm-9">
+
+                                        <span class="k-widget k-datepicker k-header form-control"><span class="k-picker-wrap k-state-default"><input id="field72" type="text" class="form-control k-input" data-role="date" role="textbox" aria-haspopup="true" aria-expanded="false" aria-owns="field72_dateview" style="width: 100%;" aria-disabled="false" aria-readonly="false" aria-label="Current focused date is null" data-error-container="#errfield72" required="required" data-parsley-errors-container="#errId16"><span unselectable="on" class="k-select" role="button" aria-controls="field72_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span><span id="errId16" class="error"></span></div>
+
+                                </div><div class="form-group">
+                                    <label class="control-label control-label-left col-sm-3" for="field73">Pickup Time<span class="req"> *</span></label>
+                                    <div class="controls col-sm-9">
+
+                                        <span class="k-widget k-timepicker k-header form-control"><span class="k-picker-wrap k-state-default"><input id="field73" type="text" class="form-control k-input" data-role="time" role="textbox" aria-haspopup="true" aria-expanded="false" aria-owns="field73_timeview" style="width: 100%;" aria-disabled="false" aria-readonly="false" data-error-container="#errfield73" required="required" data-parsley-errors-container="#errId17"><span unselectable="on" class="k-select" role="button" aria-controls="field73_timeview"><span unselectable="on" class="k-icon k-i-clock">select</span></span></span></span><span id="errId17" class="error"></span></div>
+
+                                </div><div class="form-group">
+
+
+
+                                    <button id="button75" type="button" class="btn btn-default">Submit</button></div></div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <script src="http://cdn.kendostatic.com/2014.1.318/js/jquery.min.js"></script>
+        <script src="http://protostrap.com/Assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.js" type="text/javascript"></script>
+
+        <script src="http://protostrap.com/Assets/inputmask/js/jquery.inputmask.js" type="text/javascript"></script>
+        <script src="http://cdn.kendostatic.com/2014.1.318/js/kendo.all.min.js"></script>
+        <script src="http://protostrap.com/Assets/parsely/parsley.extend.js" type="text/javascript"></script>
+        <script src="http://protostrap.com/Assets/parsely/2.0/parsley.js" type="text/javascript"></script>
+        <script src="http://protostrap.com/Assets/download.js" type="text/javascript"></script>
+        <script src="http://protostrap.com/Assets/protostrap.js" type="text/javascript"></script>
+        </body>
+    </div>
+
+    <footer>
+        <hr/>
+        &copy;Prantl's Bakery 2018
+        <a>What We Make</a>
+        <a>Special Occasions</a>
+        <a>Gallery</a>
+        <a>Order Online</a>
+        <a>Locations</a>
+        <a>Contact</a>
+        <a href="https://www.facebook.com/PrantlsBakery">Facebook</a>
+        <a href="https://www.twitter.com/prantlsbakery">Twitter</a>
+        <a href="https://www.instagram.com/prantls_bakery/">Instagram</a>
+    </footer>
+</div>
+</body>
+</html>
