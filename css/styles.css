@@ -124,6 +124,7 @@ nav {
     
 }
 
+/* dropdown */
 ul {
     list-style-type: none;
     margin: 0;
@@ -404,6 +405,8 @@ li.dropdown {
     height: auto;
 }
 
+/* google maps */
+
 #leftiframe {
     clear: both;
     float: left;
@@ -429,6 +432,8 @@ li.dropdown {
     text-align: center;
 }
 
+/* highcharts */
+
 #charts {
     width: 100%;
     clear: both;
@@ -449,7 +454,7 @@ li.dropdown {
 }
 
 
-/* tabs */
+/* jquery tabs */
 
 .ui-tabs .ui-tabs-nav
 {
@@ -465,6 +470,10 @@ li.dropdown {
 
 #tabs .ui-state-active {
     background: #00a665;
+}
+
+#tabs li {
+    clear: both;
 }
 
 /* form */
@@ -492,6 +501,11 @@ input[type=button], input[type=submit], input[type=reset] {
     margin: 4px 2px;
     cursor: pointer;
     font-size: 18px;
+}
+
+hr {
+    clear: both;
+
 }
 
 
