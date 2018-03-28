@@ -1,0 +1,236 @@
+html {
+    overflow-y: scroll;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a.order-button {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    
+    -ms-transform: translate(-50%,0%);
+    background-color: #00a665;
+    font-size:16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* header logo*/
+
+.overrides #header-logo img{
+    float: left;
+    width:14.5%;
+    height: auto;
+    display: block;
+    position: absolute;
+    margin: 2% 0px 2% 2%;
+    top: 0;
+    left: 0;
+}
+
+/* header formatting*/
+
+.overrides header {
+    position: relative;
+    padding: 0 0 0 0;
+    height: auto;
+    max-height: 100vh;
+    width:100%;
+    overflow: hidden;
+    border: none;
+    margin: 0;
+    visibility: inherit;
+    opacity: 1;
+    
+}
+.overrides #image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.overrides .responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.overrides header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 3.2em;
+    letter-spacing: 1px;
+}
+
+/* nav bar */
+.overrides nav {
+    padding: 3%;
+    padding-top: 4%;
+    margin: 0;
+    float: right;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+.overrides nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.overrides nav ul li {
+    float: left;
+}
+
+.overrides li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.overrides .dropbtn {
+    cursor: default;
+}
+
+.overrides li a:hover, .overrides .dropdown:hover {
+    background-color: #00a665;
+    z-index: 6000;
+}
+
+.overrides li a:hover .dropbtn {
+    background-color: #00a665;
+}
+
+.overrides li.dropdown {
+    display: inline-block;
+}
+
+.overrides .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    /*cursor: pointer;   */
+}
+
+.overrides .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.overrides .dropdown-content a:hover {background-color: #f1f1f1}
+
+.overrides .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#please footer {
+    clear: both;
+    background-color: #402e22;
+    background-size: 100%;
+    font-size: 12px;
+    border: none;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/*a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}*/
+
+a:hover {
+    font-size: 12px;
+    border: none;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#please #feeter #footer-links a {
+    font-size: 12px;
+    border: none;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.overrides .copyright {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#please .overrides .footer-links a{
+    font-size: 12px;
+    border: none;
+    padding: 5px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.overrides .social-media-links{
+    text-decoration: none;
+    color: white;
+    align-self: flex-end;
+    padding-bottom: 0.5%;
+}
+
+.overrides #footer-outline {
+    background-color: #00a665;
+    font-size:12px;
+    padding: 10px 18px;
+    border-radius: 5px;
+}

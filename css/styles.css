@@ -5,6 +5,7 @@ html {
 
 body {
     margin: 0;
+    padding: 0 0 0 0;
 }
 
 a.order-button {
@@ -28,11 +29,11 @@ a.order-button {
 
 #header-logo img{
     float: left;
-    width:150px;
+    width:14.5%;
     height: auto;
     display: block;
     position: absolute;
-    margin: 10px 0px 10px 40px;
+    margin: 2% 0px 2% 2%;
     top: 0;
     left: 0;
 }
@@ -50,6 +51,7 @@ header {
     margin: 0;
     visibility: inherit;
     opacity: 1;
+    
 }
 header #image1 {
     position: relative;
@@ -63,16 +65,63 @@ header #image1 {
     height: auto;
 }
 
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 3.2em;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: white;
+    font-size: 3.2em;
+    letter-spacing: 1px;
+}
+
+header h3 {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: white;
+    font-size: 1.5em;
+    width: 70%;
+    text-align: center;
+}
+
+header h3 a {
+    text-decoration: underline;
+    color: white;
+    
+}
+
+header iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+}
+
 /* nav bar */
 nav {
-    padding: 15px;
-    padding-top: 35px;
+    padding: 3%;
+    padding-top: 4%;
     margin: 0;
     float: right;
     display: inline-block;
     position: absolute;
     top: 0;
     right: 0;
+    
 }
 
 ul {
@@ -93,9 +142,18 @@ li a, .dropbtn {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+.dropbtn {
+    cursor: default;
+}
+
+li a:hover, .dropdown:hover {
+    background-color: #00a665;
+}
+
+li a:hover .dropbtn {
     background-color: #00a665;
 }
 
@@ -223,11 +281,225 @@ li.dropdown {
     padding-bottom: 3%;
 }
 
+/* Weddings */
+
+#wedding-text1 {
+    text-align: center;
+    width: 95%;
+    padding-left: 3%;
+    font-size: 19px;
+}
+
+#wedding-image_textbody {
+    float: left;
+    width: 45%;
+}
+
+#wedding-image_textbody img {
+    width: 100%;
+    height: auto;
+    padding-left: 2%;
+    padding-bottom: 10px;
+}
+
+#wedding-image_text {
+    width: 51%;
+    float: right;
+    padding-right: 15px;
+    line-height: 160%;
+    font-size: 1.85vw;
+}
+
+/* Celebrations */
+
+#celeb-text1 {
+    text-align: center;
+    width: 95%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#text2 {
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-left: 3%;
+    padding-top: 2%;
+    font-size: 2vw;
+    line-height: 5vh;
+}
+
+#img1 {
+    width: 40%;
+    float: right;
+    padding-right: 5%;
+}
+
+#img1 img {
+    width: 100%;
+    height: auto;
+}
+
+#secondstuff-cel {
+    clear: both;
+    padding-top: 3%;
+}
+
+#text3 {
+    text-align: center;
+}
+
+#img2 {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#img2 img {
+    width: 100%;
+    height: auto;
+}
+
+#final-cel {
+    text-align: center;
+}
+
+/* Locations */
+
+#local-title {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#locationsstuff {
+    width: 100%;
+    clear: both;
+}
+
+#leftpiclocal {
+    float: left;
+    width: 39%;
+    padding-left: 5%;
+    text-align: center;
+}
+
+#leftpiclocal img {
+    width: 100%;
+    height: auto;
+}
+
+#rightpiclocal {
+    float: right;
+    width: 44.5%;
+    padding-right: 2%;
+    text-align: center;
+}
+
+#rightpiclocal img {
+    width: 100%;
+    height: auto;
+}
+
+#leftiframe {
+    clear: both;
+    float: left;
+    width: 45%;
+    padding-left: 2%;
+}
+#leftiframe iframe {
+    width: 100%;
+}
+
+#rightiframe {
+    float: right;
+    width: 45%;
+    padding-right: 2%;
+}
+
+#rightiframe iframe {
+    width: 100%;
+}
+
+#busyhours {
+    clear: both;
+    text-align: center;
+}
+
+#charts {
+    width: 100%;
+    clear: both;
+}
+
+#d-chart {
+    width: 48%;
+    float: left;
+    height: auto;
+    padding-left: 1%;
+}
+
+#s-chart {
+    width: 48%;
+    float: right;
+    height: auto;
+    padding-right: 1%;
+}
+
+
+/* tabs */
+
+.ui-tabs .ui-tabs-nav
+{
+    background: #00ce7d;
+    text-align: center;
+    margin-top: -1px;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    float: none !important;
+    display: inline-block;
+}
+
+#tabs .ui-state-active {
+    background: #00a665;
+}
+
+/* form */
+
+form {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #00a665;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
 
 /* footer */
 
 footer {
-    background-color: #4a3232;
+    clear: both;
+    background-color: #402e22;
     background-size: 100%;
     font-size: 12px;
     border: none;
@@ -243,6 +515,11 @@ footer {
     flex-wrap: nowrap;
 }
 
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
 .copyright {
     display: flex;
     justify-content: flex-start;
@@ -251,16 +528,19 @@ footer {
 .footer-links {
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 
 .social-media-links{
     text-decoration: none;
     color: white;
     align-self: flex-end;
-    padding: 0;
+    padding-bottom: 0.5%;
 }
 
 #footer-outline {
-    outline: 2px #00a665 solid;
-    outline-offset: 5px;
+    background-color: #00a665;
+    font-size:12px;
+    padding: 10px 18px;
+    border-radius: 5px;
 }

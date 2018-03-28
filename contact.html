@@ -8,11 +8,15 @@
     <title>Prantl's Bakery</title>
     <link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
 <div id="container">
     <div id="top_row">
-        <header >
+        <header>
+            <!--<img id="image1" src="images/homepage2.jpeg" alt="homepage-image">-->
+            <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/iLhlZciMfoQ?autoplay=1&amp;rel=0&amp;start=2&amp;mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <div id="header-logo">
                 <a href="index.html">
                     <img class="responsive" src="images/logo.png" alt="logo">
@@ -25,6 +29,7 @@
                         <a href="javascript:void(0)" class="dropbtn">Special Occasions</a>
                         <div class="dropdown-content">
                             <a href="weddings.html">Weddings</a>
+                            <a href="celebrations.html">Celebrations</a>
                         </div>
                     </li>
                     <li><a href="gallery.html">Gallery</a></li>
@@ -33,26 +38,48 @@
 
                 </ul>
             </nav>
+            <h2>Contact us!</h2>
         </header>
 
     </div>
 
     <div id="content">
+        <form onsubmit="return validate()" action="mailto:infoneeded@prantlsbakery.com" method="post" enctype="text/plain">
 
+            <!--Name:<br>-->
+            <br><label>Name:<br></label>
+            <input type="text" name="firstname" value="Your Name" required><br><br>
+            <label>Zip Code:<br></label>
+            <input id="zip" name="zip" value="" type="text" title="zip"><br><br>
+            <label>Message:<br></label>
+            <textarea type="text" name="bigmessagebox" rows="10" cols="50" maxlength="1000"></textarea><br><br>
+            <label>Would you like to sign up for our mailing list?<br></label>
+            <label>Yes, please update me! </label><input type="checkbox" ><br><br>
+            <label>Please enter your email address:<br></label>
+            <input type="email" value="abc@defg.com" required><br><br>
+
+            <input class="Submit" type="submit" title="Submit" value="Submit"><br>
+
+        </form>
     </div>
-    <hr/>
     <footer>
+        <div class="copyright">&copy;Prantl's Bakery 2018</div>
 
-        &copy;Prantl's Bakery 2018
-        <a>What We Make</a>
-        <a>Special Occasions</a>
-        <a>Gallery</a>
-        <a>Order Online</a>
-        <a>Locations</a>
-        <a>Contact</a>
-        <a href="https://www.facebook.com/PrantlsBakery">Facebook</a>
-        <a href="https://www.twitter.com/prantlsbakery">Twitter</a>
-        <a href="https://www.instagram.com/prantls_bakery/">Instagram</a>
+        <a href="what_we_make.html">What We Make </a>
+        <a href="weddings.html">Special Occasions</a>
+        <a id="footer-outline" href="order_online.html">Order Online</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+
+        <a class="social-media-links" href="https://www.facebook.com/PrantlsBakery">
+            <img src="images/facebook.png" alt="Facebook" height="15" width="15"/></a>
+
+        <a class="social-media-links" href="https://www.twitter.com/prantlsbakery">
+            <img src="images/whitetwitter%20copy.png" alt="twitter" height="15" width="15"/></a>
+
+        <a class="social-media-links" href="https://www.instagram.com/prantls_bakery/">
+            <img src="images/instagram-logo-white.png" alt="Instagram" height="15" width="15"/></a>
     </footer>
 </div>
 </body>

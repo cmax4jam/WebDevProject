@@ -6,19 +6,23 @@
     <meta name="keywords" content="Prantl's Bakery, Almond Torte">
     <meta name="descriptions" content="Prantl's Bakery Official Website">
     <title>Prantl's Bakery</title>
-    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.css" rel="stylesheet" type="text/css" />
 
     <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.common.min.css" rel="stylesheet" />
     <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.bootstrap.min.css" rel="stylesheet" />
     <link href="http://protostrap.com/Assets/gv/css/gv.bootstrap-form.css" rel="stylesheet" type="text/css" />
+    <!--<link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>-->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700" rel="stylesheet">
+    <link href="css/overrides.css" rel="stylesheet" media="all" type="text/css"/>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 </head>
 <body>
 <div id="container">
-    <div id="top_row">
-        <header >
+    <div class="overrides">
+        <header>
+            <img id="image1" src="images/torte.jpg" alt="homepage-image">
             <div id="header-logo">
                 <a href="index.html">
                     <img class="responsive" src="images/logo.png" alt="logo">
@@ -31,6 +35,7 @@
                         <a href="javascript:void(0)" class="dropbtn">Special Occasions</a>
                         <div class="dropdown-content">
                             <a href="weddings.html">Weddings</a>
+                            <a href="celebrations.html">Celebrations</a>
                         </div>
                     </li>
                     <li><a href="gallery.html">Gallery</a></li>
@@ -39,17 +44,16 @@
 
                 </ul>
             </nav>
-            <a href="order_online.html" class="order-button">Order Online</a>
         </header>
 
     </div>
 
     <div id="content">
-        <body>
+
 
         <div class="container-fluid">
             <div class="row">
-
+    <!--THIS FORM IS FROM PROTOSTRAP.COM--I ASKED PERMISSION TO USE IT FROM PROF Q-->
                 <form action="../submit" id="formentry" class="form-horizontal" role="form" data-parsley-validate novalidate>
                     <div class="container-fluid shadow">
                         <div class="row">
@@ -120,7 +124,7 @@
                                     <label class="control-label control-label-left col-sm-3" for="field64">Zip Code<span class="req"> *</span></label>
                                     <div class="controls col-sm-9">
 
-                                        <input id="field64" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId9"><span id="errId9" class="error"></span></div>
+                                        <input maxlength="5" id="field64" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId9"><span id="errId9" class="error"></span></div>
 
                                 </div><div class="form-group" style="display: block;">
                                     <label class="control-label control-label-left col-sm-3" for="field38">City<span class="req"> *</span></label>
@@ -192,7 +196,7 @@
 
 
 
-                                    <button id="button75" type="button" class="btn btn-default">Submit</button></div></div>
+                                    <button id="button75" type="submit" class="btn btn-default">Submit</button></div></div>
                             </div>
 
 
@@ -215,22 +219,29 @@
         <script src="http://protostrap.com/Assets/parsely/2.0/parsley.js" type="text/javascript"></script>
         <script src="http://protostrap.com/Assets/download.js" type="text/javascript"></script>
         <script src="http://protostrap.com/Assets/protostrap.js" type="text/javascript"></script>
-        </body>
-    </div>
 
-    <footer>
-        <hr/>
-        &copy;Prantl's Bakery 2018
-        <a>What We Make</a>
-        <a>Special Occasions</a>
-        <a>Gallery</a>
-        <a>Order Online</a>
-        <a>Locations</a>
-        <a>Contact</a>
-        <a href="https://www.facebook.com/PrantlsBakery">Facebook</a>
-        <a href="https://www.twitter.com/prantlsbakery">Twitter</a>
-        <a href="https://www.instagram.com/prantls_bakery/">Instagram</a>
+    </div>
+    <div id="please">
+    <footer class="overrides" id="feeter">
+        <div class="copyright">&copy;Prantl's Bakery 2018</div>
+        <div class="footer-links">
+            <a class="a-s" href="what_we_make.html">What We Make </a>
+            <a class="a-s" href="weddings.html">Special Occasions</a>
+            <a class="a-s" id="footer-outline" href="order_online.html">Order Online</a>
+            <a class="a-s" href="gallery.html">Gallery</a>
+            <a class="a-s" href="locations.html">Locations</a>
+            <a class="a-s" href="contact.html">Contact</a>
+        </div>
+        <a class="social-media-links" href="https://www.facebook.com/PrantlsBakery">
+            <img src="images/facebook.png" alt="Facebook" height="15" width="15"/></a>
+
+        <a class="social-media-links" href="https://www.twitter.com/prantlsbakery">
+            <img src="images/whitetwitter%20copy.png" alt="twitter" height="15" width="15"/></a>
+
+        <a class="social-media-links" href="https://www.instagram.com/prantls_bakery/">
+            <img src="images/instagram-logo-white.png" alt="Instagram" height="15" width="15"/></a>
     </footer>
+    </div>
 </div>
 </body>
 </html>
